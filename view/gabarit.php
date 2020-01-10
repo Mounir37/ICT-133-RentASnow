@@ -39,30 +39,24 @@
 
     <div class="divPanel notop nobottom">
         <div class="row-fluid">
-            <div class="span12">
+            <div class="row">
                 <div id="divLogo" class="pull-left">
                     <a href="index.php" id="divSiteTitle">Rent A Snow</a><br/>
                     <a href="index.php" id="divTagLine">La glisse à moindre coût</a>
                 </div>
-                <div id="divMenuRight" class="pull-right">
-                    <div class="navbar">
-                        <button type="button" class="btn btn-navbar-highlight btn-large btn-primary" data-toggle="collapse" data-target=".nav-collapse">
-                            NAVIGATION <span class="icon-chevron-down icon-white"></span>
-                        </button>
-                        <div class="nav-collapse collapse">
-                            <ul class="nav nav-pills ddmenu">
-                                <!-- On commence par afficher les boutons qui s'afficheront, peu importe les événements-->
-                                <li><a href="index.php?action=home">Home</a></li>
-                                <li><a href="index.php?action=displaySnows">Snows</a></li>
-                            </ul>
-                        </div>
-                    </div>
+            </div>
+            <div class="row">
+                <div class="navbar">
+                    <ul class="nav nav-pills">
+                        <!-- On commence par afficher les boutons qui s'afficheront, peu importe les événements-->
+                        <li><a href="index.php?action=home">Home</a></li>
+                        <li><a href="index.php?action=displaySnows">Snows</a></li>
+                    </ul>
                 </div>
             </div>
         </div>
 
         <div class="contentArea">
-
             <div class="divPanel notop page-content">
                 <div class="row-fluid">
                     <div class="span12" id="divMain">
