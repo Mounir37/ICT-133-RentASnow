@@ -17,7 +17,10 @@ function home()
 
 function displaySnows()
 {
-    die("OK");
+
+    $snows = getSnows();
+    var_dump($snows);
+    die('OK');
     require_once 'view/Snows.php';
 }
 ?>
