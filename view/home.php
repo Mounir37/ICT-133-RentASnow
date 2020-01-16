@@ -1,4 +1,10 @@
 <?php
+/**
+ *Auteur:   Mounir Fiaux
+ *Titre:    Snows.php
+ *Date:     16.01.2020
+ *Version:
+ */
 ob_start();
 $title = "RentASnow - Accueil";
 ?>
