@@ -25,5 +25,10 @@ function connexions(){
 
     require_once  'view/connexion.php';
 }
+function validateLogin(){
+    if (isset($_POST ==])){
+
+    }
+}
 
 ?>

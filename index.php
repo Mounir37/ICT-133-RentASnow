@@ -16,6 +16,10 @@ switch ($choix_page) {
 	case "connexion":
 		connexions();
 		break;
+	case "validate_login":
+		validateLogin();
+		break;
+
 	default:
 		home();
 		break;
