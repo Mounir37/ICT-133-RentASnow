@@ -2,7 +2,7 @@
 <?php
 /**
  *Auteur:   Mounir Fiaux
- *Titre:    Snows.php
+ *Titre:    gabarit.php
  *Date:     16.01.2020
  *Version:
  */
@@ -62,6 +62,7 @@
                         <!-- On commence par afficher les boutons qui s'afficheront, peu importe les événements-->
                         <li><a href="index.php?action=home">Home</a></li>
                         <li><a href="index.php?action=displaySnows">Snows</a></li>
+                        <li><a href="index.php?action=connexion">Connexions</a></li>
                     </ul>
                 </div>
             </div>

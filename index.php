@@ -1,22 +1,25 @@
 <?php
+session_start();
 /**
  *Auteur:   Mounir Fiaux
- *Titre:    Snows.php
+ *Titre:    index.php
  *Date:     16.01.2020
  *Version:
  */
 require "controler/controler.php";
 
 $choix_page = $_GET['action'];
-switch ($choix_page){
+switch ($choix_page) {
 	case "displaySnows":
 		displaySnows();
-	break;
+		break;
+	case "connexion":
+		connexions();
+		break;
 	default:
 		home();
-	break;
+		break;
 }
-
 
 
 ?>

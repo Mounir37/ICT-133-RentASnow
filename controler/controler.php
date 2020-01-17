@@ -1,7 +1,7 @@
 <?php
 /**
  *Auteur:   Mounir Fiaux
- *Titre:    Snows.php
+ *Titre:    controler.php
  *Date:     16.01.2020
  *Version:
  */
@@ -19,8 +19,11 @@ function displaySnows()
 {
 
     $snows = getSnows();
-    var_dump($snows);
-    die('OK');
     require_once 'view/Snows.php';
 }
+function connexions(){
+
+    require_once  'view/connexion.php';
+}
+
 ?>

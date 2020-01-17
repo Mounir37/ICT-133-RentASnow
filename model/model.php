@@ -1,7 +1,7 @@
 <?php
 /**
  *Auteur:   Mounir Fiaux
- *Titre:    Snows.php
+ *Titre:    model.php
  *Date:     16.01.2020
  *Version:
  */
@@ -12,7 +12,9 @@ function getNews()
 
 function getSnows()
 {
-    return json_decode(file_get_contents("model/dataStorage/Snows.json"),true);
+	return json_decode(file_get_contents("model/dataStorage/Snows.json"), true);
 }
+
+
 
 ?>
