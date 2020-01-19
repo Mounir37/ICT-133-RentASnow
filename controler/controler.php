@@ -26,9 +26,22 @@ function connexions(){
     require_once  'view/connexion.php';
 }
 function validateLogin(){
-    if (isset($_POST ==])){
 
+    if(isset($_POST['validate'])) {
+        $username = $_POST['USERNAME'];
+        $password = $_POST['MDP'];
     }
+
+    if ($username = "Mounir Fiaux" && $password = "CPNV"){
+        $_SESSION ['user'] = $username;
+        require_once "view/home.php";
+    }
+
+    require_once "view/home.php";
+}
+function disconnect() {
+    unset($_SESSION['user']);
+    require_once 'view/connexion.php';
 }
 
 ?>

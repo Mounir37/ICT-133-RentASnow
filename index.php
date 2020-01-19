@@ -19,7 +19,9 @@ switch ($choix_page) {
 	case "validate_login":
 		validateLogin();
 		break;
-
+	case 'logout':
+		disconnect();
+		break;
 	default:
 		home();
 		break;

@@ -11,7 +11,7 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title><?= $title; ?></title>
+    <title><?= $title = "" ?></title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link href="node_modules/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
@@ -42,7 +42,7 @@
 
 </head>
 <body id="pageBody">
-
+<?php var_dump($_SESSION); ?>
 <div id="divBoxed" class="container">
 
     <div class="transparent-bg"
@@ -62,7 +62,11 @@
                         <!-- On commence par afficher les boutons qui s'afficheront, peu importe les événements-->
                         <li><a href="index.php?action=home">Home</a></li>
                         <li><a href="index.php?action=displaySnows">Snows</a></li>
-                        <li><a href="index.php?action=connexion">Connexions</a></li>
+                        <?php if (isset($_SESSION['user'])){?>
+                            <li><a href="index.php?action=logout">Déconnexion</a></li>
+                        <?php } else { ?>
+                        <li><a href="index.php?action=validate_login">Connexion</a></li>
+                        <?php } ?>
                     </ul>
                 </div>
             </div>
