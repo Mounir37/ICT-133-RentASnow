@@ -42,7 +42,6 @@
 
 </head>
 <body id="pageBody">
-<?php var_dump($_SESSION); ?>
 <div id="divBoxed" class="container">
 
     <div class="transparent-bg"
@@ -65,7 +64,7 @@
                         <?php if (isset($_SESSION['user'])){?>
                             <li><a href="index.php?action=logout">Déconnexion</a></li>
                         <?php } else { ?>
-                        <li><a href="index.php?action=validate_login">Connexion</a></li>
+                        <li><a href="index.php?action=connexion">Connexion</a></li>
                         <?php } ?>
                     </ul>
                 </div>

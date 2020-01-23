@@ -25,14 +25,9 @@ function connexions(){
 
     require_once  'view/connexion.php';
 }
-function validateLogin(){
+function validateLogin($username,$password){
 
-    if(isset($_POST['validate'])) {
-        $username = $_POST['USERNAME'];
-        $password = $_POST['MDP'];
-    }
-
-    if ($username = "Mounir Fiaux" && $password = "CPNV"){
+    if ($username == "Mounir Fiaux" && $password == "CPNV"){
         $_SESSION ['user'] = $username;
         require_once "view/home.php";
     }

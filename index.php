@@ -7,6 +7,8 @@ session_start();
  *Version:
  */
 require "controler/controler.php";
+$username = $_POST['username'];
+$password = $_POST['password'];
 
 $choix_page = $_GET['action'];
 switch ($choix_page) {
@@ -17,7 +19,7 @@ switch ($choix_page) {
 		connexions();
 		break;
 	case "validate_login":
-		validateLogin();
+		validateLogin($username,$password);
 		break;
 	case 'logout':
 		disconnect();
