@@ -25,11 +25,22 @@ function connexions(){
 
     require_once  'view/connexion.php';
 }
-function validateLogin($username,$password){
+function validateLogin($username,$password)
+{
+    $_SESSION['Erreur'] = false;
 
-    if ($username == "Mounir Fiaux" && $password == "CPNV"){
-        $_SESSION ['user'] = $username;
-        require_once "view/home.php";
+    $LogUser = getLogUser($username);
+
+    if ($LogUser != "")
+    {
+        if ($LogUser['password'] == $password)
+        {
+            $_SESSION['user'] = $username;
+        }
+    }
+    if (isset($_SESSION['user']) == false)
+    {
+        $_SESSION['Erreur'] = true;
     }
 
     require_once "view/home.php";
