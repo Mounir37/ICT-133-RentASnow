@@ -2,8 +2,7 @@
 /**
  *Auteur:   Mounir Fiaux
  *Titre:    controler.php
- *Date:     16.01.2020
- *Version:
+ *Version:  1.0
  */
 require_once 'model/model.php';
 
@@ -25,7 +24,7 @@ function connexions(){
 
     require_once  'view/connexion.php';
 }
-function validateLogin($username,$password)
+function validateLogin($username,$password) //vérification de l'utilisateur et du mot de passe
 {
     $_SESSION['Erreur'] = false;
 

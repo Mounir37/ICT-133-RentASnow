@@ -3,8 +3,7 @@
 /**
  *Auteur:   Mounir Fiaux
  *Titre:    gabarit.php
- *Date:     16.01.2020
- *Version:
+ *Version:  1.0
  */
 ?>
 
@@ -61,11 +60,11 @@
                         <!-- On commence par afficher les boutons qui s'afficheront, peu importe les événements-->
                         <li><a href="index.php?action=home">Home</a></li>
                         <li><a href="index.php?action=displaySnows">Snows</a></li>
-                        <?php if (isset($_SESSION['user'])){?>
+						<?php if (isset($_SESSION['user'])) { ?>                    <!--vérification de la session si un compte est déjà enregistrer ou non -->
                             <li><a href="index.php?action=logout">Déconnexion</a></li>
-                        <?php } else { ?>
-                        <li><a href="index.php?action=connexion">Connexion</a></li>
-                        <?php } ?>
+						<?php } else { ?>
+                            <li><a href="index.php?action=connexion">Connexion</a></li>
+						<?php } ?>
                     </ul>
                 </div>
             </div>
@@ -130,8 +129,16 @@
                                 12 Rue de la Glisse<br/>
                                 2704 Sautons, Valais<br/>
                                 Suisse
-                            </li>
-                            <li></li>
+                            </li><?php if (isset($_SESSION['user']) == true)   //vérification + affichage de l'utilisateur qui est sur la session actuel
+							{
+								?>
+                                <li>connecté en tant que: <?=$_SESSION['user']?></li>
+								<?php
+							}
+							else
+							{
+								echo("<li>veuillez vous connectez.</li>");
+							} ?>
                         </ul>
                     </div>
 

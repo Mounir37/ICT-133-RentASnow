@@ -2,8 +2,7 @@
 /**
  *Auteur:   Mounir Fiaux
  *Titre:    model.php
- *Date:     16.01.2020
- *Version:
+ *Version: 1.0
  */
 function getNews()
 {
@@ -23,7 +22,7 @@ function getLogUser($name)
 
 	$listUsers = getUsers();
 
-	foreach ($listUsers as $User)
+	foreach ($listUsers as $User)//stock et vérifie le nom d'utilisateur
 	{
 		if ($User['username'] == $name)
 		{

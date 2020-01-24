@@ -3,8 +3,7 @@ ob_start();
 /**
  *Auteur:   Mounir Fiaux
  *Titre:    Snows.php
- *Date:     16.01.2020
- *Version:
+ *Version:  1.0
  */
 ?>
     <h1 class="offset-md-3 ">Liste des Snows</h1>
@@ -19,7 +18,7 @@ ob_start();
         <tbody>
 
 		<?php
-		foreach ($snows as $snow) {
+		foreach ($snows as $snow) { //affichage de toute la liste des snows
 			echo "<tr><td>" . $snow['modele'] . "</td><td>" . $snow['disponible'] . "</td><td><img src='" . $snow['smallimage'] . "' alt=''></td></tr>";
 		}
 		?>

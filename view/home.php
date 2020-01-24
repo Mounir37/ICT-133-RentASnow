@@ -2,8 +2,7 @@
 /**
  *Auteur:   Mounir Fiaux
  *Titre:    home.php
- *Date:     16.01.2020
- *Version:
+ *Version: 1.0
  */
 ob_start();
 $title = "RentASnow - Accueil";
