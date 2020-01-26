@@ -48,5 +48,18 @@ function disconnect() {
     unset($_SESSION['user']);
     require_once 'view/connexion.php';
 }
+function newaccount($username,$fullname,$birthdate,$password) //initialisation de la création d'un nouveau compte avec la fonction
+{
+    $listUsers = getUsers();
+    $newUser = [
+        'username' => $username,
+        'fullname' => $fullname,
+        'password' => $password,
+        'birthdate' => $birthdate,
+        'date-inscription' => date("Y-m-d", time()),
+    ];
+    $listUsers[] = $newUser;
+    file_put_contents("model/dataStorage/Users.json", json_encode($listUsers)); //écriture du compte créer dans le fichier Json
+}
 
 ?>
