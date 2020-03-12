@@ -10,8 +10,11 @@ $birthdate = $_POST['birthdate']; //initialisation du birthdate avec la QueryStr
 $username = $_POST['username'];	//initialisation du user avec la QueryString
 $password = $_POST['password'];	//initialisation du mot de passe avec la QueryString
 require "controler/controler.php";
+require ".constant.php";
+$cmd = "mysql -u $user -p$pass < Restore-MCU-PO-Final.sql";
+exec($cmd);
 
-var_dump($fullname,$password );
+
 $choix_page = $_GET['action'];
 switch ($choix_page) {			//choix de la page php grace à la QueryString
 	case "displaySnows":

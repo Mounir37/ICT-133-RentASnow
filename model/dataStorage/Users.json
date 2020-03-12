@@ -1,0 +1,16 @@
+[
+  {
+    "username": "Mounir",
+    "fullname": "Mounir Fiaux",
+    "password": "123",
+    "birthdate": "2003-09-25",
+    "date-inscription": "2020-03-05"
+  },
+  {
+    "username": null,
+    "fullname": null,
+    "password": null,
+    "birthdate": null,
+    "date-inscription": "2020-03-05"
+  }
+]

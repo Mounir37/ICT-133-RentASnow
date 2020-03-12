@@ -12,7 +12,7 @@
 	"id": 2,
     "modele": "B126",
     "marque": "Free Thinker",
-    "bigimage": "view/images/B126.jpg",
+    "bigimage": "view/images/B126.jpg", 
     "smallimage": "view/images/B126_small.jpg",
     "dateretour": "2020-01-09",
     "disponible": false
